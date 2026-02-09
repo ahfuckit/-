@@ -1,0 +1,16 @@
+```JavaScript
+
+const settings = {
+console: console,
+that: this
+}
+
+class InitLogs {
+  constructor() {
+  const inject = this.settings;
+  Object.assign(this, inject, Window);
+this.inject = settings;
+}
+
+}
+```
